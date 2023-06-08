@@ -1,6 +1,6 @@
 import styles from "./header.module.scss";
 import SearchIcon from "../../assets/images/search.svg";
-// import RewindArrowIcon from "../../icons/RewindArrowIcon";
+import Vectordown from "../../commons/SVG/SVG.jsx";
 import UserPhoto from "../../assets/images/userfoto.png";
 import Progress from "../../commons/Progress/Progress.jsx";
 import "../../commons/Progress/progress.scss";
@@ -8,7 +8,7 @@ import red from "../../commons/Progress/red.module.scss";
 import yellow from "../../commons/Progress/yellow.module.scss";
 import green from "../../commons/Progress/green.module.scss";
 
-export default function Header(props) {
+export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.greyText}>Среда, 13 окт</div>
@@ -34,12 +34,16 @@ export default function Header(props) {
       <div className={styles.greyText}>
         <img className={styles.icon} src={SearchIcon} alt="search" />
         ИП Сидорова Александра Михайловна
-        {/* <RewindArrowIcon direction="Bottom" /> */}
+        <div className={styles.vector}>
+          <Vectordown />
+        </div>
       </div>
 
-      <div className={styles.date}>
+      <div className={styles.user}>
         <img className={styles.UserPhoto} src={UserPhoto} alt="userphoto" />
-        {/* <RewindArrowIcon direction="Bottom" /> */}
+        <div className={styles.vector}>
+          <Vectordown />
+        </div>
       </div>
     </header>
   );

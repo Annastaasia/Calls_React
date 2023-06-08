@@ -4,7 +4,6 @@
   width: calc(100% - 240px);
   left: 240px;
   top: 0px;
-
   background: #ffffff;
 
   padding: 0 120px 0 120px;
@@ -16,11 +15,13 @@
 }
 
 .greyText {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.4rem;
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-
   color: #899cb1;
 }
 
@@ -52,4 +53,23 @@
 
 .icon {
   margin-right: 64px;
+  cursor: pointer;
+}
+
+.vector {
+  cursor: pointer;
+}
+
+.vector:hover {
+  transform: rotate(180deg);
+  & path {
+    fill: #0024cb;
+  }
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.4rem;
 }
