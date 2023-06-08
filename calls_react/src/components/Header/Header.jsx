@@ -1,6 +1,6 @@
 import styles from "./header.module.scss";
 import SearchIcon from "../../assets/images/search.svg";
-import Vectordown from "../../commons/SVG/SVG.jsx";
+import Vectordown from "../../assets/SVG/Vectordown.jsx";
 import UserPhoto from "../../assets/images/userfoto.png";
 import Progress from "../../commons/Progress/Progress.jsx";
 import "../../commons/Progress/progress.scss";
