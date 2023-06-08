@@ -48,26 +48,4 @@
 
 .icon {
   margin-right: 64px;
-}
-
-.progress {
-  display: grid;
-  grid-gap: 7px;
-}
-.progress .indicator__progress {
-  width: 156px;
-  height: 6px;
-  border-radius: 12px;
-}
-.progress .indicator__progress::-webkit-progress-bar {
-  background-color: #dee6f5;
-}
-.progress .indicator__progress_green::-webkit-progress-value {
-  background-color: #28a879;
-}
-.progress .indicator__progress_yellow::-webkit-progress-value {
-  background-color: var(--color-yellow);
-}
-.progress .indicator__progress_red::-webkit-progress-value {
-  background-color: var(--color-red);
 }/*# sourceMappingURL=header.module.css.map */

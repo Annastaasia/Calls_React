@@ -2,9 +2,13 @@ import styles from "./header.module.scss";
 import SearchIcon from "../../assets/images/search.svg";
 // import RewindArrowIcon from "../../icons/RewindArrowIcon";
 import UserPhoto from "../../assets/images/userfoto.png";
-import Progress from "../../commons/Progress.jsx";
+import Progress from "../../commons/Progress/Progress.jsx";
+import "../../commons/Progress/progress.scss";
+import red from "../../commons/Progress/red.module.scss";
+import yellow from "../../commons/Progress/yellow.module.scss";
+import green from "../../commons/Progress/green.module.scss";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <header className={styles.header}>
       <div className={styles.greyText}>Среда, 13 окт</div>
@@ -12,19 +16,19 @@ export default function Header() {
         <div className={styles.blackText}>
           Новые звонки <span className={styles.greenText}>20 из 30 шт</span>
         </div>
-        <Progress color="#28A879" progress={0.4} />
+        <Progress theme={green} />
       </div>
       <div className={styles.date}>
         <div className={styles.blackText}>
           Качество разговоров <span className={styles.yellowText}>40%</span>
         </div>
-        <Progress color="#FFD500" progress={0.4} />
+        <Progress theme={yellow} />
       </div>
       <div className={styles.date}>
         <div className={styles.blackText}>
           Конверсия в заказ <span className={styles.redText}>67%</span>
         </div>
-        <Progress color="#EA1A4F" progress={0.5} />
+        <Progress theme={red} />
       </div>
 
       <div className={styles.greyText}>
