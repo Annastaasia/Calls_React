@@ -23,43 +23,63 @@ export default function Sidebar() {
       </Link>
       <div className={styles.nav}>
         <NavLink to="results" className={styles.item}>
-          <ResultsSVG className={styles.svg}/>
+          <div className={styles.svg}>
+            <ResultsSVG />
+          </div>
           <p className={styles.text}>Итоги</p>
         </NavLink>
         <NavLink to="orders" className={styles.item}>
-          <OrdersSVG />
+          <div className={styles.svg}>
+            <OrdersSVG />
+          </div>
           <p className={styles.text}>Заказы</p>
         </NavLink>
         <NavLink to="messages" className={styles.item}>
-          <MessagesSVG />
+          <div className={styles.svg}>
+            <MessagesSVG />
+          </div>
           <p className={styles.text}>Сообщения</p>
         </NavLink>
         <NavLink to="calls" className={styles.item}>
-          <CallsSVG />
+          <div className={styles.svg}>
+            <CallsSVG />
+          </div>
           <p className={styles.text}>Звонки</p>
         </NavLink>
-        <NavLink to="counterparties" className={styles.item}>
-          <ClientsSVG />
+        <NavLink to="clients" className={styles.item}>
+          <div className={styles.svg}>
+            <ClientsSVG />
+          </div>
           <p className={styles.text}>Контрагенты</p>
         </NavLink>
         <NavLink to="documentation" className={styles.item}>
-          <DocumentationSVG />
+          <div className={styles.svg}>
+            <DocumentationSVG />
+          </div>
           <p className={styles.text}>Документы</p>
         </NavLink>
-        <NavLink to="performers" className={styles.item}>
-          <EmployeeSVG />
+        <NavLink to="employees" className={styles.item}>
+          <div className={styles.svg}>
+            <EmployeeSVG />
+          </div>
           <p className={styles.text}>Исполнители</p>
         </NavLink>
         <NavLink to="reports" className={styles.item}>
-          <ReportsSVG />
+          <div className={styles.svg}>
+            <ReportsSVG />
+          </div>
           <p className={styles.text}>Отчеты</p>
         </NavLink>
-        <NavLink to="knowledgeBase" className={styles.item}>
-          <InfoSVG />
+        <NavLink to="info" className={styles.item}>
+          <div className={styles.svg}>
+            <InfoSVG />
+          </div>
           <p className={styles.text}>База знаний</p>
         </NavLink>
         <NavLink to="settings" className={styles.item}>
-          <SettingsSVG />
+          <div className={styles.svg}>
+            <SettingsSVG />
+          </div>
           <p className={styles.text}>Настройки</p>
         </NavLink>
       </div>

@@ -39,11 +39,19 @@
 .text {
   color: rgba(248, 248, 248, 0.567);
   text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .svg {
-  margin-left: 6%;
+  margin-left: 12px;
 }
+
+// .svg:active {
+//   & path {
+//     fill-opacity: 1;
+//   }
+// }
 
 .nav {
   // :active {
@@ -52,7 +60,7 @@
   //     color: #fff;
   //   }
   //   .svg path {
-  //     fill-opacity: #fff;
+  //     fill-opacity: 1;
   //   }
   //   &::before {
   //     content: "";
@@ -81,8 +89,9 @@
       color: #fff;
     }
     .svg path {
-      fill: #fff;
+      fill-opacity: 1;
     }
+
     &::before {
       content: "";
       position: absolute;

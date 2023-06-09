@@ -1,6 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { createStore } from "redux";
 
-const dateFormatting = (date) => {
+function dateFormatting(date) {
   return (
     date.getFullYear() +
     "-" +
@@ -8,7 +8,7 @@ const dateFormatting = (date) => {
     "-" +
     String(date.getDate()).padStart(2, "0")
   );
-};
+}
 
 const reducer = (
   state = {
@@ -24,14 +24,12 @@ const reducer = (
       ],
     },
   },
-
   action
 ) => {
   switch (action.type) {
     case "FETCH_DATA_SUCCESS": {
       return { ...state, calls: action.payload };
     }
-
     case "DISPATCH CHOSEN PERIOD": {
       let newState = JSON.parse(JSON.stringify(state));
       newState.Filter.periodFilterName = action.payload.name;
@@ -48,10 +46,9 @@ const reducer = (
         },
       };
     }
-
     default:
       return state;
   }
 };
 
-const store = configureStore({ reducer });
+export const store = createStore(reducer);

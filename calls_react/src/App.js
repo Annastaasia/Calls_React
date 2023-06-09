@@ -4,7 +4,8 @@ import React from "react";
 //   Route,
 // } from "react-router-dom";
 import Header from './components/Header/Header.jsx';
-import  Sidebar  from './components/Sidebar/Sidebar.jsx';
+import Sidebar from './components/Sidebar/Sidebar.jsx';
+import BalanceDate from './components/BalanceDate/BalanceDate.jsx';
 // import  Main  from './components/Main';
 
 
@@ -13,6 +14,7 @@ export default function App() {
     <div className="App">
       <Header />
       <Sidebar />
+      <BalanceDate />
       {/* <Main /> */}
     </div>
   );
