@@ -1,5 +1,7 @@
 import styles from "./sidebar.module.scss";
 import Logo from "../../assets/images/logo.png";
+import AddOrder from "../../assets/images/addorder.svg";
+import Pay from "../../assets/images/pay.svg";
 import ResultsSVG from "../../assets/SVG/ResultsSVG.jsx";
 import OrdersSVG from "../../assets/SVG/OrdersSVG.jsx";
 import MessagesSVG from "../../assets/SVG/MessagesSVG.jsx";
@@ -10,10 +12,7 @@ import EmployeeSVG from "../../assets/SVG/EmployeeSVG.jsx";
 import ReportsSVG from "../../assets/SVG/ReportsSVG.jsx";
 import InfoSVG from "../../assets/SVG/InfoSVG.jsx";
 import SettingsSVG from "../../assets/SVG/SettingsSVG.jsx";
-// import {
-//   PaymentSVG,
-//   AddOrderSVG,
-// } from "../../commons/SVG/SVG.jsx";
+import SidebarButton from "../../commons/SidebarButton/SidebarButton.jsx";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar() {
@@ -22,78 +21,56 @@ export default function Sidebar() {
       <Link to="/">
         <img src={Logo} className={styles.logo} alt="logo"></img>
       </Link>
-      <div className="nav">
+      <div className={styles.nav}>
         <NavLink to="results" className={styles.item}>
-          <div className="nav__item_svg">
-            <ResultsSVG />
-          </div>
-          <div className="nav__item_text">Итоги</div>
+          <ResultsSVG className={styles.svg}/>
+          <p className={styles.text}>Итоги</p>
         </NavLink>
         <NavLink to="orders" className={styles.item}>
-          <div className="nav__item_svg">
-            <OrdersSVG />
-          </div>
-          <div className="nav__item_text">Заказы</div>
+          <OrdersSVG />
+          <p className={styles.text}>Заказы</p>
         </NavLink>
         <NavLink to="messages" className={styles.item}>
-          <div className="nav__item_svg">
-            <MessagesSVG />
-          </div>
-          <div className="nav__item_text">Сообщения</div>
+          <MessagesSVG />
+          <p className={styles.text}>Сообщения</p>
         </NavLink>
         <NavLink to="calls" className={styles.item}>
-          <div className="nav__item_svg">
-            <CallsSVG />
-          </div>
-          <div className="nav__item_text">Звонки</div>
+          <CallsSVG />
+          <p className={styles.text}>Звонки</p>
         </NavLink>
         <NavLink to="counterparties" className={styles.item}>
-          <div className="nav__item_svg">
-            <ClientsSVG />
-          </div>
-          <div className="nav__item_text">Контрагенты</div>
+          <ClientsSVG />
+          <p className={styles.text}>Контрагенты</p>
         </NavLink>
         <NavLink to="documentation" className={styles.item}>
-          <div className="nav__item_svg">
-            <DocumentationSVG />
-          </div>
-          <div className="nav__item_text">Документы</div>
+          <DocumentationSVG />
+          <p className={styles.text}>Документы</p>
         </NavLink>
         <NavLink to="performers" className={styles.item}>
-          <div className="nav__item_svg">
-            <EmployeeSVG />
-          </div>
-          <div className="nav__item_text">Исполнители</div>
+          <EmployeeSVG />
+          <p className={styles.text}>Исполнители</p>
         </NavLink>
         <NavLink to="reports" className={styles.item}>
-          <div className="nav__item_svg">
-            <ReportsSVG />
-          </div>
-          <div className="nav__item_text">Отчеты</div>
+          <ReportsSVG />
+          <p className={styles.text}>Отчеты</p>
         </NavLink>
         <NavLink to="knowledgeBase" className={styles.item}>
-          <div className="nav__item_svg">
-            <InfoSVG />
-          </div>
-          <div className="nav__item_text">База знаний</div>
+          <InfoSVG />
+          <p className={styles.text}>База знаний</p>
         </NavLink>
         <NavLink to="settings" className={styles.item}>
-          <div className="nav__item_svg">
-            <SettingsSVG />
-          </div>
-          <div className="nav__item_text">Настройки</div>
+          <SettingsSVG />
+          <p className={styles.text}>Настройки</p>
         </NavLink>
       </div>
-      {/* <div className="buttons">
-        <NavLink to="add" className="button">
-          <span className="button__text_add">Добавить заказ</span>
-          <AddOrderSVG />
+      <div className={styles.buttonGroup}>
+        <NavLink to="add" className={styles.button}>
+          <SidebarButton icon={AddOrder} name={"Добавить заказ"} />
         </NavLink>
-        <NavLink to="payment" className="button">
-          <span className="button__text_payment">Оплата</span>
-          <PaymentSVG />
+        <NavLink to="payment" className={styles.button}>
+          <SidebarButton icon={Pay} name={"Оплата"} />
         </NavLink>
-      </div> */}
+      </div>
     </div>
   );
 }
