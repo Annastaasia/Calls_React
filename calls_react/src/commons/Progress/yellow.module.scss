@@ -1,4 +1,6 @@
 .progress {
   background-color: rgb(204, 207, 4);
   width: 40%;
+  height: 6px;
+  --bs-progress-height: 6px;
 }

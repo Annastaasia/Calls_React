@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Left from "../../assets/images/left.svg";
 import Right from "../../assets/images/right.svg";
 import Calendar from "../../assets/images/calendar.svg";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   ButtonDropdown,
   DropdownToggle,
@@ -121,7 +121,6 @@ export default function BalanceDate() {
           }}
           className={styles.button_left}
         >
-          {/* <RewindArrowIcon direction="Left" /> */}
           <img
             src={Left}
             className={styles.logo}
@@ -141,17 +140,7 @@ export default function BalanceDate() {
           toggle={() => setDropdown(!isDropdown)}
         >
           <DropdownToggle color="white" className={styles.dropdownHeader}>
-            {/* <CalendarIcon
-              inlineStyle={{ position: "relative", top: "-7px", left: "-10px" }}
-              hover={isCalendarHover}
-            /> */}
-            <img
-              src={Calendar}
-              className={styles.logo}
-              //   inlineStyle={{ position: "relative", top: "-7px", left: "-10px" }}
-              //   hover={isCalendarHover}
-              alt="logo"
-            ></img>
+            <img src={Calendar} className={styles.logo} alt="calendar"></img>
             <p className={styles.dropdownHeaderText}>
               {ChosenFilter.periodFilterName}
             </p>
@@ -232,7 +221,6 @@ export default function BalanceDate() {
           }}
           className={styles.button_right}
         >
-          {/* <RewindArrowIcon direction="Right" /> */}
           <img
             src={Right}
             className={styles.logo}

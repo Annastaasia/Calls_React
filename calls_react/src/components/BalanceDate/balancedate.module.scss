@@ -42,9 +42,9 @@
   outline: none;
   position: absolute;
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   width: 95px;
-  height: 24px;
+  height: 34px;
   left: 10px;
 }
 
@@ -94,7 +94,7 @@
   text-align: right;
   color: #005ff8;
   position: relative;
-  top: -6px;
+  margin-left: 10%;
 }
 
 .dateInput {
@@ -141,3 +141,9 @@ input[type="number"]:focus {
   width: 204px;
   padding: 0;
 }
+
+// .btn-white {
+//   display: inline-flex;
+//   column-gap: 0.4rem;
+//   padding: 0 12px;
+// }
