@@ -40,7 +40,7 @@ export default function Sidebar() {
           </div>
           <p className={styles.text}>Сообщения</p>
         </NavLink>
-        <NavLink to="calls" className={styles.item}>
+        <NavLink to="calls" className={styles.item} active="true">
           <div className={styles.svg}>
             <CallsSVG />
           </div>

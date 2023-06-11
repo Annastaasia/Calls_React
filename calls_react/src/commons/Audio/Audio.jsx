@@ -1,17 +1,17 @@
 import { useState } from "react";
-import styles from "./AudioPlayer.module.css";
-import DownloadIcon from "../../icons/DownloadIcon.svg";
-import PlayIcon from "../../icons/PlayIcon.svg";
-import StopIcon from "../../icons/StopIcon.svg";
-import CloseIcon from "../../icons/CloseIcon.svg";
+import styles from "./audio.module.scss";
+import DownloadAudio from "../../assets/SVG/DownloadAudio.svg";
+import playaudio from "../../assets/images/playaudio.svg";
+import Stopaudio from "../../assets/images/Stopaudio.svg";
+import Closeaudio from "../../assets/SVG/Closeaudio.svg";
 
 export default function AudioPlayer(props) {
   function Enter() {
     !audio && fetchAudio(props.record_id);
   }
 
-  let ctx = "";
-  let playSound = "";
+  let ctx;
+  let playSound;
 
   function fetchAudio(record_id) {
     ctx = new AudioContext();
@@ -40,8 +40,8 @@ export default function AudioPlayer(props) {
       });
   }
 
-  const [audio, setaudio] = useState < "" > null;
-  const [isPlay, setPlay] = useState < "" > false;
+  const [audio, setaudio] = useState(null);
+  const [isPlay, setPlay] = useState(false);
 
   function PlayStopToogle() {
     if (audio) {
@@ -66,16 +66,16 @@ export default function AudioPlayer(props) {
       >
         <img
           className={styles.playIcon}
-          src={isPlay ? StopIcon : PlayIcon}
+          src={isPlay ? Stopaudio : playaudio}
           alt=""
         />
       </div>
       <div className={styles.progressLine}></div>
       <div className={styles.iconForPlayer}>
-        <img src={DownloadIcon} alt="" />
+        <img src={DownloadAudio} alt="" />
       </div>
       <div className={styles.iconForPlayer}>
-        <img src={CloseIcon} alt="" />
+        <img src={Closeaudio} alt="CloseAudio" />
       </div>
     </div>
   );
