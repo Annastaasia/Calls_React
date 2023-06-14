@@ -1,10 +1,10 @@
 import styles from "./main.module.scss";
 import CallsMap from "../../commons/CallsMap/CallsMap.jsx";
 
-export default function Main(props) {
+export default function Main() {
   return (
     <>
-      <div className={styles.mainheader}>
+      <main className={styles.mainheader}>
         <div className={styles.arrow}>Тип</div>
         <div className={styles.time}>Время</div>
         <div className={styles.person}>Cотрудник</div>
@@ -12,7 +12,7 @@ export default function Main(props) {
         <div className={styles.source}>Источник</div>
         <div className={styles.score}>Оценка</div>
         <div className={styles.time}>Длительность</div>
-      </div>
+      </main>
       <div className={styles.calls}>
         <CallsMap />
       </div>

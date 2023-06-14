@@ -5,18 +5,22 @@
   top: 200px;
   background: #ffffff;
   box-shadow: 0px 4px 5px #e9edf3;
-  border-radius: 8px;
+  border-radius: 0px 0px 8px 8px;
   padding-left: 50px;
 }
 
 .mainheader {
-  width: 100%;
+  position: relative;
+  width: calc(100% - 360px - 120px);
   height: 65px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 10%;
-  margin-left: 20%;
+  top: 200px;
+  left: 360px;
+  background: #ffffff;
+  box-shadow: 0px 4px 5px #e9edf3;
+  border-radius: 8px 8px 0px 0px;
+  padding-left: 50px;
 }
 
 .arrow {
@@ -25,7 +29,7 @@
   font-weight: 400;
   font-size: 14px;
   color: #899cb1;
-  flex: 0 1 65px;
+  flex: 0 1 60px;
 }
 
 .person {
@@ -34,17 +38,8 @@
   font-weight: 400;
   font-size: 14px;
   color: #899cb1;
-  flex: 0 0 70px;
+  flex: 0 0 125px;
 }
-
-// .client_info{
-//     font-family: 'SF Pro Display';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 14px;
-//     color: #899CB1;
-//     flex: 1 0 200px;
-// }
 
 .call {
   font-family: "SF Pro Display";
@@ -52,7 +47,7 @@
   font-weight: 400;
   font-size: 14px;
   color: #899cb1;
-  flex: 0 0 80px;
+  flex: 0 0 190px;
 }
 
 .from_site {
