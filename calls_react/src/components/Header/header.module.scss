@@ -77,3 +77,102 @@
 .progress {
   height: 6px;
 }
+
+.profile{
+  position: absolute;
+  z-index: 4;
+  top: 64px;
+  right: 8px;
+  display: none;
+  width: 368px;
+  border-radius: 4px;
+  box-shadow: 4px 16px 50px 0 #8187a36b;
+  background-color: #FFFFFF;
+  font-size: 15px;
+  padding: 20px 0;
+  font-family: 'SFProDisplay';
+  .profile__data{
+    padding: 0 31px;
+    color: #5E7793;
+    .nameAndOut{
+      font-size: 18px;
+      font-weight: 500;
+      color: #122945;
+      display: flex;
+      justify-content: space-between;
+      .out{
+        cursor: pointer;
+      }
+      .out:hover path{
+        fill: #0024CB;
+      }
+    }
+    .jobAndlocation{
+      padding: 6px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .job{
+        position: relative;
+      }
+      .point{
+        width: 4px;
+        height: 4px;
+        background-color: #ADBFDF;
+        border-radius: 50%;
+      }
+    }
+    .phone, .email{
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      cursor: pointer;
+      & svg{
+        width: 16px;
+        height: 16px;
+        & path{
+          fill: #ADBFDF;
+        }
+      }
+    }
+    .email{
+      padding: 8px 0 16px;
+      border-bottom: 1px solid #EAF0FA;
+    }
+  }
+  .profile__article{
+    .profile__title{
+      color: #5E7793;
+      margin: 16px 0 8px;
+      padding: 0 32px;
+    }
+    .profile__item{
+      padding: 0 32px;
+      height: 48px;
+      display: grid;
+      grid-template-columns: 32px 1fr 20px;
+      align-items: center;
+      color: var(--bg-color-btn);
+      cursor: pointer;
+      .profile__item_name{
+        padding-left: 12px;
+      }
+      &:hover{
+        background-color: #002efb21;
+        color: #0024CB;
+      }
+      img{
+        width: 32px;
+        border-radius: 50%;
+      }
+      & svg{
+        display: none;
+      }
+    }
+    .profile__item:hover{
+      & svg{
+        display: block;
+      }
+    }
+  }
+}
