@@ -69,8 +69,8 @@ export default function Header() {
         <div className={styles.vector}>
           <Vectordown />
         </div>
-        <div className="profile">
-          <div className="profile__data">
+        <div className={styles.profile}>
+          <div className={styles.data}>
             <div className="nameAndOut">
               <div className="name">Упоров Кирилл</div>
               <NavLink to="/exit" className="exit">
@@ -94,11 +94,11 @@ export default function Header() {
           <div className="profile__article">
             <div className="profile__title">Операторы</div>
             <div className="profile__item">
-              {/* <img
-                className={state.UserPhoto}
+              <img
+                className={styles.UserPhoto}
                 src={UserPhoto}
                 alt="userphoto"
-              /> */}
+              />
               <div className="profile__item_name">Мирон Батонов</div>
               <ExitUser />
             </div>

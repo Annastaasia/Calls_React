@@ -140,7 +140,7 @@ export default function BalanceDate() {
           toggle={() => setDropdown(!isDropdown)}
         >
           <DropdownToggle color="white" className={styles.dropdownHeader}>
-            <img src={Calendar} className={styles.logo} alt="calendar"></img>
+            <img src={Calendar} className={styles.calendar} alt="calendar"></img>
             <p className={styles.dropdownHeaderText}>
               {ChosenFilter.periodFilterName}
             </p>

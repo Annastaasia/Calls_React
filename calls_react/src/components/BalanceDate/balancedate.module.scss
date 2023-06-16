@@ -36,6 +36,7 @@
   position: absolute;
   width: 10px;
   height: 24px;
+  cursor: pointer;
 }
 
 .picker_value {
@@ -48,11 +49,16 @@
   left: 10px;
 }
 
+.calendar {
+  cursor: pointer;
+}
+
 .button_right {
   position: absolute;
   width: 10px;
   height: 24px;
   left: 105px;
+  cursor: pointer;
 }
 
 .dropdownItem {
@@ -100,7 +106,6 @@
 .dateInput {
   border: none;
   background-color: rgb(255, 255, 255, 0);
-
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
@@ -141,9 +146,3 @@ input[type="number"]:focus {
   width: 204px;
   padding: 0;
 }
-
-// .btn-white {
-//   display: inline-flex;
-//   column-gap: 0.4rem;
-//   padding: 0 12px;
-// }
