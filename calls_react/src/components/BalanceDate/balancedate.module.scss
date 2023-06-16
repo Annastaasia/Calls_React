@@ -16,6 +16,13 @@
   font-size: 15px;
   padding: 0 10px 0 10px;
   color: #899cb1;
+  cursor: pointer;
+}
+
+.balance:hover {
+  & path {
+    fill: #0024cb;
+  }
 }
 
 .text {
@@ -39,6 +46,12 @@
   cursor: pointer;
 }
 
+.button_left:hover {
+  & path {
+    fill: #005ff8;
+  }
+}
+
 .picker_value {
   outline: none;
   position: absolute;
@@ -49,8 +62,10 @@
   left: 10px;
 }
 
-.calendar {
-  cursor: pointer;
+.dropdownHeader:hover {
+  & path {
+    fill: #005ff8;
+  }
 }
 
 .button_right {
@@ -59,6 +74,12 @@
   height: 24px;
   left: 105px;
   cursor: pointer;
+}
+
+.button_right:hover {
+  & path {
+    fill: #005ff8;
+  }
 }
 
 .dropdownItem {

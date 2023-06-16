@@ -1,10 +1,10 @@
 import styles from "./balancedate.module.scss";
-import Balance from "../../assets/images/balance.svg";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Left from "../../assets/images/left.svg";
-import Right from "../../assets/images/right.svg";
-import Calendar from "../../assets/images/calendar.svg";
+import ButtonLeft from "../../assets/SVG/ButtonLeft.jsx";
+import ButtonRight from "../../assets/SVG/ButtonRight.jsx";
+import Calendar from "../../assets/SVG/Calendar.jsx";
+import Balance from "../../assets/SVG/Balance.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   ButtonDropdown,
@@ -121,12 +121,7 @@ export default function BalanceDate() {
           }}
           className={styles.button_left}
         >
-          <img
-            src={Left}
-            className={styles.logo}
-            direction="Left"
-            alt="logo"
-          ></img>
+          <ButtonLeft />
         </div>
         <ButtonDropdown
           onMouseEnter={() => {
@@ -140,7 +135,7 @@ export default function BalanceDate() {
           toggle={() => setDropdown(!isDropdown)}
         >
           <DropdownToggle color="white" className={styles.dropdownHeader}>
-            <img src={Calendar} className={styles.calendar} alt="calendar"></img>
+            <Calendar />
             <p className={styles.dropdownHeaderText}>
               {ChosenFilter.periodFilterName}
             </p>
@@ -221,17 +216,12 @@ export default function BalanceDate() {
           }}
           className={styles.button_right}
         >
-          <img
-            src={Right}
-            className={styles.logo}
-            direction="Right"
-            alt="logo"
-          ></img>
+          <ButtonRight />
         </div>
       </div>
       <div className={styles.balance}>
         Баланс: <span className={styles.text}>272 &#8381;</span>
-        <img className={styles.icon} src={Balance} alt="balance" />
+        <Balance />
       </div>
     </>
   );

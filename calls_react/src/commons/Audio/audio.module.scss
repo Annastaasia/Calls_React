@@ -16,6 +16,7 @@
   width: 30px;
   border-radius: 15px;
   margin: 10px;
+  cursor: pointer;
 }
 
 .time {
@@ -25,7 +26,6 @@
   font-size: 15px;
   line-height: 100%;
   color: #122945;
-
   margin: 2px;
 }
 
@@ -44,8 +44,12 @@
 .playIcon {
   height: 22px;
   width: 22px;
-
   margin-top: 4px;
   margin-left: 4px;
   display: block;
+  cursor: pointer;
+}
+
+.iconForPlayer {
+  cursor: pointer;
 }

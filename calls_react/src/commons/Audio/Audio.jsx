@@ -67,12 +67,12 @@ export default function AudioPlayer(props) {
         <img
           className={styles.playIcon}
           src={isPlay ? Stopaudio : playaudio}
-          alt=""
+          alt="PlayIcon"
         />
       </div>
       <div className={styles.progressLine}></div>
       <div className={styles.iconForPlayer}>
-        <img src={DownloadAudio} alt="" />
+        <img src={DownloadAudio} alt="DownloadAudio" />
       </div>
       <div className={styles.iconForPlayer}>
         <img src={Closeaudio} alt="CloseAudio" />
