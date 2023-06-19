@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Calls_React/static/css/main.93182798.css",
+    "main.js": "/Calls_React/static/js/main.eb1d09b8.js",
+    "static/js/787.595b26c4.chunk.js": "/Calls_React/static/js/787.595b26c4.chunk.js",
+    "index.html": "/Calls_React/index.html",
+    "static/media/search.svg": "/Calls_React/static/media/search.5c256363d20308b8e6b5d885f1798174.svg",
+    "static/media/playaudio.svg": "/Calls_React/static/media/playaudio.9fa94a36dff46294aa7fb9293e521e9b.svg",
+    "static/media/pay.svg": "/Calls_React/static/media/pay.4604ba2f49eddf1c94afe75db0986c3c.svg",
+    "static/media/addorder.svg": "/Calls_React/static/media/addorder.59e53661d059eaa31b8d2dfd1a5247b0.svg",
+    "static/media/Closeaudio.svg": "/Calls_React/static/media/Closeaudio.a50c91c819ef9971539cbbb713318032.svg",
+    "static/media/Stopaudio.svg": "/Calls_React/static/media/Stopaudio.1723e3fe70a0e1b7c8b215ceabee6a26.svg",
+    "static/media/DownloadAudio.svg": "/Calls_React/static/media/DownloadAudio.222bc33b3dd6878068860bede577602d.svg",
+    "main.93182798.css.map": "/Calls_React/static/css/main.93182798.css.map",
+    "main.eb1d09b8.js.map": "/Calls_React/static/js/main.eb1d09b8.js.map",
+    "787.595b26c4.chunk.js.map": "/Calls_React/static/js/787.595b26c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93182798.css",
+    "static/js/main.eb1d09b8.js"
+  ]
+}
