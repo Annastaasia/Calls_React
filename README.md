@@ -1,18 +1,17 @@
-<h1 align="center">💬😊Calls with API on React </h1>
+<h1 align="center">🔊🎧 Website for calls with API on React </h1>
 <h2>About The Project (О проекте) - React application for calls with API</h2>
 
 
-1️⃣  С помощью **"Calls with API on React"** можно оставлять комментарии.
+1️⃣  С помощью **"Website for calls with API on React"** можно слушать звонки.
 
-2️⃣  У пользователей есть возможность добавить в пустое поле сообщение, нажать кнопку submit, и получить на выходе коммментарий(-ии) в обозначенном ниже поле.
+2️⃣  У пользователей есть возможность выбирать промежуток времени, нажав кнопку с календарём, и отфильтровать, полученный список звонков по API.
 
-3️⃣  Для удобства самый свежий комментарий поднимается выше всех остальных и выделяется желтым цветом :-)
+3️⃣  Для удобства при наведении на SVG изображения, векторы меняют цвет и анимируются :-)
 
 <h2>Foto Presentation</h2>
 
-
-<img width="700" alt="Приложение без комментариев" src="https://github.com/Annastaasia/Chat/assets/108290014/b0f81459-a281-4ccf-b24e-f01b417a50cd.png">
-<img width="700" alt="Приложение с комментариями" src="https://github.com/Annastaasia/Chat/assets/108290014/e17a481c-b2af-4429-b73c-180a24e75761.png">
+<img width="700" alt="Приложение без комментариев" src="https://github.com/Annastaasia/Calls_React/assets/108290014/0a3da013-109b-4b9e-afa3-ea81b4452adf.png">
+<img width="700" alt="Приложение с комментариями" src="https://github.com/Annastaasia/Calls_React/assets/108290014/9118b9da-b5f2-4107-9759-f5eeaa284f92.png">
 
 ## Getting started
 
@@ -22,11 +21,11 @@
 
 <h2>Technologies</h2>
 
-:white_check_mark: HTML    
+:white_check_mark: API    
 :white_check_mark: SCSS      
 :white_check_mark: Java Script   
 :white_check_mark: React          
-:white_check_mark: Flex    
+:white_check_mark: Redux    
 :white_check_mark: semantic and responsive layout *(семантическая и отзывчивая вёрстка)*      
 
 <h2>Contacts</h2>
@@ -36,4 +35,4 @@
 <p>  Telegram - *https://t.me/Nemezida_Ok*
 
 ## Result:
-https://annastaasia.github.io/Chat/
+https://annastaasia.github.io/Calls_React/
