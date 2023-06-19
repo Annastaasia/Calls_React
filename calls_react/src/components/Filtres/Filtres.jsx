@@ -25,13 +25,11 @@ export default function Filters() {
           isOpen={isDropdown}
           toggle={() => setDropdown(!isDropdown)}
         >
-          <DropdownToggle color="white">
+          <DropdownToggle className={styles.chose} color="white">
             <p className={styles.text}>{ChosenFilter} </p>
-            {isDropdown ? (
-              <Vectordown direction="Top" />
-            ) : (
-              <Vectordown direction="Bottom" />
-            )}
+            <div className={styles.vector}>
+              <Vectordown />
+            </div>
           </DropdownToggle>
           <DropdownMenu>
             <DropdownItem
@@ -63,23 +61,33 @@ export default function Filters() {
       </div>
       <div className={styles.filter}>
         <p className={styles.text}>Все сотрудники </p>
-        <Vectordown direction="Bottom" />
+        <div className={styles.vector}>
+          <Vectordown />
+        </div>
       </div>
       <div className={styles.filter}>
         <p className={styles.text}>Все звонки </p>
-        <Vectordown direction="Bottom" />
+        <div className={styles.vector}>
+          <Vectordown />
+        </div>
       </div>
       <div className={styles.filter}>
         <p className={styles.text}>Все источники </p>
-        <Vectordown direction="Bottom" />
+        <div className={styles.vector}>
+          <Vectordown />
+        </div>
       </div>
       <div className={styles.filter}>
         <p className={styles.text}>Все оценки </p>
-        <Vectordown direction="Bottom" />
+        <div className={styles.vector}>
+          <Vectordown />
+        </div>
       </div>
       <div className={styles.filter}>
         <p className={styles.text}>Все ошибки </p>
-        <Vectordown direction="Bottom" />
+        <div className={styles.vector}>
+          <Vectordown />
+        </div>
       </div>
     </div>
   );
