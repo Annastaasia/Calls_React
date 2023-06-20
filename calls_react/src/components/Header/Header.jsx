@@ -1,5 +1,4 @@
 import styles from "./header.module.scss";
-// import { useSelector } from "react-redux";
 import SearchIcon from "../../assets/images/search.svg";
 import Vectordown from "../../assets/SVG/Vectordown.jsx";
 import UserPhoto from "../../assets/images/userfoto.png";
@@ -7,17 +6,11 @@ import ExitSVG from "../../assets/SVG/ExitSVG.jsx";
 import Calls from "../../assets/SVG/CallsSVG.jsx";
 import Mail from "../../assets/SVG/MailSVG.jsx";
 import ExitUser from "../../assets/SVG/ExitUserSVG.jsx";
-// import Progress from "../../commons/Progress/Progress.jsx";
-// import "../../commons/Progress/progress.scss";
-// import red from "../../commons/Progress/red.module.scss";
-// import yellow from "../../commons/Progress/yellow.module.scss";
-// import green from "../../commons/Progress/green.module.scss";
 import { ProgressBar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
-  // const state = useSelector((state) => state.header);
   return (
     <header className={styles.header}>
       <div className={styles.greyText}>Среда, 13 окт</div>
@@ -25,7 +18,6 @@ export default function Header() {
         <div className={styles.blackText}>
           Новые звонки <span className={styles.greenText}>20 из 30 шт</span>
         </div>
-        {/* <Progress theme={green} /> */}
         <div className={styles.progress}>
           <ProgressBar
             variant="success"
@@ -43,7 +35,6 @@ export default function Header() {
           now={40}
           style={{ height: 6, borderRadius: 20 }}
         />
-        {/* <Progress theme={yellow} /> */}
       </div>
       <div className={styles.date}>
         <div className={styles.blackText}>
@@ -54,7 +45,6 @@ export default function Header() {
           now={60}
           style={{ height: 6, borderRadius: 20 }}
         />
-        {/* <Progress theme={red} /> */}
       </div>
       <div className={styles.greyText}>
         <img className={styles.icon} src={SearchIcon} alt="search" />
@@ -103,20 +93,10 @@ export default function Header() {
               <ExitUser />
             </div>
             <div className="profile__item">
-              {/* <img
-                className={state.UserPhoto}
-                src={UserPhoto}
-                alt="userphoto"
-              /> */}
               <div className="profile__item_name">Алексей Ильин</div>
               <ExitUser />
             </div>
             <div className="profile__item">
-              {/* <img
-                className={state.UserPhoto}
-                src={UserPhoto}
-                alt="userphoto"
-              /> */}
               <div className="profile__item_name">
                 Милана Константинопольская
               </div>
@@ -126,25 +106,14 @@ export default function Header() {
           <div className="profile__article">
             <div className="profile__title">Логисты</div>
             <div className="profile__item">
-              {/* <img
-                className={state.UserPhoto}
-                src={UserPhoto}
-                alt="userphoto"
-              /> */}
               <div className="profile__item_name">Александра Сизых</div>
               <ExitUser />
             </div>
             <div className="profile__item">
-              {/* <img
-                className={state.UserPhoto}
-                src={UserPhoto}
-                alt="userphoto"
-              /> */}
               <div className="profile__item_name">Илья Алексеев</div>
               <ExitUser />
             </div>
             <div className="profile__item">
-              {/* <img src={state.avatar} alt="avatar" /> */}
               <div className="profile__item_name">Владимир Петров</div>
               <ExitUser />
             </div>
@@ -152,17 +121,14 @@ export default function Header() {
           <div className="profile__article">
             <div className="profile__title">Бухгалтеры</div>
             <div className="profile__item">
-              {/* <img src={state.avatar} alt="avatar" /> */}
               <div className="profile__item_name">Полина Калинина</div>
               <ExitUser />
             </div>
             <div className="profile__item">
-              {/* <img src={state.avatar} alt="avatar" /> */}
               <div className="profile__item_name">Наталья Натальева</div>
               <ExitUser />
             </div>
             <div className="profile__item">
-              {/* <img src={state.avatar} alt="avatar" /> */}
               <div className="profile__item_name">
                 Константин Константинопольский
               </div>
