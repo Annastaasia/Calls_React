@@ -10,8 +10,8 @@
 
 <h2>Foto Presentation</h2>
 
-<img width="700" alt="Приложение без комментариев" src="https://github.com/Annastaasia/Calls_React/assets/108290014/0a3da013-109b-4b9e-afa3-ea81b4452adf.png">
-<img width="700" alt="Приложение с комментариями" src="https://github.com/Annastaasia/Calls_React/assets/108290014/9118b9da-b5f2-4107-9759-f5eeaa284f92.png">
+<img alt="Приложение без комментариев" src="https://github.com/Annastaasia/Calls_React/assets/108290014/0a3da013-109b-4b9e-afa3-ea81b4452adf.png">
+<img alt="Приложение с комментариями" src="https://github.com/Annastaasia/Calls_React/assets/108290014/9118b9da-b5f2-4107-9759-f5eeaa284f92.png">
 
 ## Getting started
 
