@@ -31,8 +31,8 @@
 <h2>Contacts</h2>
 
 **Anastasiya Shitenkova** 
-<p>  LinkedIn - *https://www.linkedin.com/in/anastasiya-shitenkova/* 
-<p>  Telegram - *https://t.me/Nemezida_Ok*
+<p>  LinkedIn - https://www.linkedin.com/in/anastasiya-shitenkova/
+<p>  Telegram - https://t.me/Nemezida_Ok
 
 ## Result:
 https://annastaasia.github.io/Calls_React/
